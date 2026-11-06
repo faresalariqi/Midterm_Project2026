@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midterm Project – Launch Your First Personal Website | MIS326 Web Programming</title>
+  <meta name="description" content="MIS326 Web Programming midterm project: build and publish your personal portfolio website on GitHub Pages.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== Top bar ===== -->
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <span class="course-tag">MIS326 · Web Programming</span>
+      <nav class="topnav" aria-label="Page sections">
+        <a href="#requirements">Requirements</a>
+        <a href="#submission">Submission</a>
+        <a href="#grading">Grading</a>
+        <a href="#rules">Rules</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Izmir Bakırçay University · Department of MIS · Midterm Project</p>
+      <h1>Launch Your First<br>Personal Website</h1>
+      <p class="lead">Build a personal portfolio website with HTML and CSS, publish it on GitHub Pages, and submit the live link.</p>
+
+      <div class="hero-meta">
+        <div class="meta-box deadline">
+          <span class="meta-label">Deadline</span>
+          <span class="meta-value">15 November 2026 · 23:59</span>
+          <span class="meta-sub" id="countdown" aria-live="polite"></span>
+        </div>
+        <div class="meta-box">
+          <span class="meta-label">Weight</span>
+          <span class="meta-value">50% of the Midterm grade</span>
+        </div>
+        <div class="meta-box">
+          <span class="meta-label">Instructor</span>
+          <span class="meta-value">Dr. Fares Dael</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="wrap">
+
+    <!-- ===== Future CV callout ===== -->
+    <section class="callout callout-cv" aria-labelledby="cv-title">
+      <div class="callout-icon" aria-hidden="true">★</div>
+      <div>
+        <h2 id="cv-title">This website is your future CV</h2>
+        <p>Do not build this just to pass the course. Build it as if an employer, an internship coordinator, or a master's program will open it tomorrow, <strong>because they can</strong>. Your link will stay online after this course ends, and you can keep adding to it.</p>
+        <ul>
+          <li>Use a <strong>professional photo</strong> and write about yourself carefully.</li>
+          <li>Check your <strong>spelling, grammar and links</strong> before you submit.</li>
+          <li>Show your real education, skills and projects. Quality matters more than quantity.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Objective & Description ===== -->
+    <section class="two-col">
+      <article class="card">
+        <h2>Objective</h2>
+        <p>The objective of this assignment is to help you gain practical experience with HTML and CSS by creating a simple webpage. This project will reinforce your understanding of fundamental web development concepts, including HTML structure, CSS styling, and the creation of a visually appealing webpage.</p>
+      </article>
+      <article class="card">
+        <h2>Project Description</h2>
+        <p>Create a personal portfolio webpage that provides information about yourself, your interests, and your skills. The webpage should consist of multiple sections and demonstrate your ability to structure content using HTML and style it using CSS.</p>
+      </article>
+    </section>
+
+    <!-- ===== Requirements ===== -->
+    <section id="requirements" class="section">
+      <h2 class="section-title"><span>01</span> Requirements</h2>
+
+      <div class="req-grid">
+
+        <article class="req">
+          <h3><span class="num">1</span> HTML Structure</h3>
+          <ul>
+            <li>Use proper HTML structure with <code>&lt;!DOCTYPE&gt;</code>, <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, and <code>&lt;body&gt;</code> tags.</li>
+            <li>Include a <code>&lt;title&gt;</code> in the <code>&lt;head&gt;</code> that reflects the content of your webpage.</li>
+            <li>Divide your webpage into sections such as (not limited to):
+              <div class="chips">
+                <span>About Me</span><span>Education</span><span>Skills</span><span>Projects</span><span>Contact</span><span class="chip-new">Download CV</span>
+              </div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="req">
+          <h3><span class="num">2</span> Content</h3>
+          <ul>
+            <li><strong>About Me:</strong> a brief introduction about yourself, with a photo.</li>
+            <li><strong>Education:</strong> list your education / training achievements.</li>
+            <li><strong>Skills:</strong> list your skills or areas of expertise.</li>
+            <li><strong>Projects:</strong> descriptions and links to any personal or class projects you've completed (if any).</li>
+            <li><strong>Contact:</strong> your contact information.</li>
+          </ul>
+        </article>
+
+        <article class="req">
+          <h3><span class="num">3</span> Text Formatting</h3>
+          <ul>
+            <li>Use appropriate HTML elements like headings (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, etc.), paragraphs (<code>&lt;p&gt;</code>), and lists (<code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>) to structure your content.</li>
+            <li>Format the text using basic HTML formatting tags.</li>
+          </ul>
+        </article>
+
+        <article class="req">
+          <h3><span class="num">4</span> Images</h3>
+          <ul>
+            <li>Include at least one image (e.g., a profile picture) on your webpage.</li>
+            <li>Use the <code>&lt;img&gt;</code> tag with the <code>src</code> attribute to display images.</li>
+            <li>You can use either online image links or upload images from your computer.</li>
+          </ul>
+        </article>
+
+        <article class="req">
+          <h3><span class="num">5</span> CSS Styling</h3>
+          <ul>
+            <li>Create an <strong>external CSS file</strong> and link it to your HTML document using the <code>&lt;link&gt;</code> tag.</li>
+            <li>Apply styles to your webpage, including font styles, colors, and spacing.</li>
+            <li>Use CSS <strong>classes</strong> and <strong>IDs</strong> to target specific elements and apply custom styling.</li>
+            <li>Ensure that your webpage is visually appealing and easy to read.</li>
+          </ul>
+        </article>
+
+        <article class="req">
+          <h3><span class="num">6</span> Layout and Positioning</h3>
+          <ul>
+            <li>Experiment with different CSS properties to control the layout and positioning of elements on your webpage.</li>
+            <li>Use techniques like margins, padding, and floats to control the placement of elements.</li>
+          </ul>
+        </article>
+
+        <article class="req req-new">
+          <span class="badge-new">New</span>
+          <h3><span class="num">7</span> Download CV Section (PDF)</h3>
+          <ul>
+            <li>Add a <strong>"Download CV"</strong> section so visitors can download your CV as a PDF file.</li>
+            <li>Prepare your CV, save it as a <strong>PDF</strong>, and upload it to your project folder on GitHub together with your other files.</li>
+            <li>Link to it with the <code>&lt;a&gt;</code> tag and the <code>download</code> attribute, for example:</li>
+          </ul>
+          <pre><code>&lt;a href="my-cv.pdf" download&gt;Download my CV (PDF)&lt;/a&gt;</code></pre>
+          <p class="tip"><strong>Tip:</strong> File names on GitHub Pages are case-sensitive. <code>My-CV.pdf</code> and <code>my-cv.pdf</code> are different files. Avoid spaces and Turkish characters in file names. After publishing, click the link on your live website to make sure the download works.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== AI policy callout ===== -->
+    <section class="callout callout-ai" aria-labelledby="ai-title">
+      <div class="callout-icon" aria-hidden="true">!</div>
+      <div>
+        <h2 id="ai-title">Using AI tools: you must know every line of your code</h2>
+        <p>You may use AI tools to help you learn, but <strong>you are fully responsible for every line of code you submit</strong>. You must understand your entire HTML and CSS code and be able to explain it.</p>
+        <ul>
+          <li>You may be asked to <strong>explain any part of your code</strong>, or to change it in front of the instructor.</li>
+          <li>If you cannot explain code you submitted, it will be treated as <strong>work that is not your own</strong>.</li>
+          <li>Use only the HTML and CSS you have learned, and make sure you understand anything new before you use it.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Submission ===== -->
+    <section id="submission" class="section">
+      <h2 class="section-title"><span>02</span> Submission Instructions</h2>
+
+      <ol class="steps">
+        <li>
+          <h3>Create a project folder</h3>
+          <p>Your folder must include:</p>
+          <ul class="checklist">
+            <li>An HTML file (e.g., <code>index.html</code>)</li>
+            <li>A separate CSS file (e.g., <code>styles.css</code>)</li>
+            <li>Screenshots of your created webpage</li>
+            <li>Any image files you use</li>
+            <li>Your CV as a PDF file (e.g., <code>my-cv.pdf</code>)</li>
+          </ul>
+        </li>
+        <li>
+          <h3>Create a GitHub student account</h3>
+          <p>If you don't already have one.</p>
+        </li>
+        <li>
+          <h3>Publish your project on GitHub Pages</h3>
+          <p>As we practiced in class.</p>
+        </li>
+        <li>
+          <h3>Submit through the UBYS platform</h3>
+          <ul class="checklist">
+            <li><strong>The link to your published website</strong>: the access link, <em>not</em> the link to the files uploaded on GitHub. <span class="hl">This step carries the highest points.</span></li>
+            <li>A ZIP archive of your project folder.</li>
+          </ul>
+          <div class="link-compare">
+            <div class="link-ok">
+              <span class="link-label">✓ Correct (website link)</span>
+              <code>https://username.github.io/</code>
+            </div>
+            <div class="link-bad">
+              <span class="link-label">✗ Wrong (files link)</span>
+              <code>https://github.com/username/repository</code>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== Grading ===== -->
+    <section id="grading" class="section">
+      <h2 class="section-title"><span>03</span> Grading Criteria</h2>
+      <p class="section-intro">Your project will be graded based on the following criteria:</p>
+
+      <div class="grading">
+        <div class="grade-row">
+          <span class="g-name">Correct use of HTML elements and structure</span>
+          <span class="g-bar"><span style="width:60%"></span></span>
+          <span class="g-pts">15</span>
+        </div>
+        <div class="grade-row">
+          <span class="g-name">Inclusion of all required sections</span>
+          <span class="g-bar"><span style="width:60%"></span></span>
+          <span class="g-pts">15</span>
+        </div>
+        <div class="grade-row">
+          <span class="g-name">Proper text formatting and content</span>
+          <span class="g-bar"><span style="width:40%"></span></span>
+          <span class="g-pts">10</span>
+        </div>
+        <div class="grade-row">
+          <span class="g-name">Effective use of images</span>
+          <span class="g-bar"><span style="width:40%"></span></span>
+          <span class="g-pts">10</span>
+        </div>
+        <div class="grade-row">
+          <span class="g-name">Quality and creativity of CSS styling</span>
+          <span class="g-bar"><span style="width:60%"></span></span>
+          <span class="g-pts">15</span>
+        </div>
+        <div class="grade-row top">
+          <span class="g-name">GitHub website link submission <em>(highest points)</em></span>
+          <span class="g-bar"><span style="width:100%"></span></span>
+          <span class="g-pts">25</span>
+        </div>
+        <div class="grade-row">
+          <span class="g-name">Overall presentation and attention to detail</span>
+          <span class="g-bar"><span style="width:40%"></span></span>
+          <span class="g-pts">10</span>
+        </div>
+        <div class="grade-total">
+          <span>Total</span>
+          <span>100 points</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Notes ===== -->
+    <section id="rules" class="section">
+      <h2 class="section-title"><span>04</span> Notes</h2>
+      <ul class="notes">
+        <li>Personalize your webpage to reflect your interests and creativity.</li>
+        <li>This is an <strong>individual</strong> assignment.</li>
+        <li>The assignment will account for <strong>50% of the total Midterm grade</strong>.</li>
+        <li>Late submissions will be subject to a grade penalty.</li>
+        <li><strong>Plagiarism will not be tolerated</strong>; ensure the work submitted is entirely your own.</li>
+      </ul>
+    </section>
+
+    <p class="signoff">Good luck, and I look forward to seeing your creative projects!</p>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>MIS326 Web Programming · 2026-2027 (I) · Dr. Fares Dael · Izmir Bakırçay University</p>
+    </div>
+  </footer>
+
+  <script>
+    // Deadline countdown
+    (function () {
+      var el = document.getElementById('countdown');
+      var deadline = new Date('2026-11-15T23:59:00+03:00');
+      function tick() {
+        var diff = deadline - new Date();
+        if (diff <= 0) { el.textContent = 'Submission closed'; return; }
+        var d = Math.floor(diff / 86400000);
+        var h = Math.floor(diff / 3600000) % 24;
+        var m = Math.floor(diff / 60000) % 60;
+        el.textContent = d + ' days ' + h + ' h ' + m + ' min left (Türkiye time)';
+      }
+      tick();
+      setInterval(tick, 60000);
+    })();
+
+    // Copy deterrent: blocks right-click, copying, cutting and dragging.
+    // (It cannot stop "View Source", developer tools or screenshots.)
+    ['contextmenu', 'copy', 'cut', 'dragstart'].forEach(function (evt) {
+      document.addEventListener(evt, function (e) { e.preventDefault(); });
+    });
+    document.addEventListener('keydown', function (e) {
+      var k = e.key ? e.key.toLowerCase() : '';
+      if ((e.ctrlKey || e.metaKey) && (k === 'c' || k === 'x' || k === 's' || k === 'u' || k === 'p')) {
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
